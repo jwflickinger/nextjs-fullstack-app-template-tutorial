@@ -1,9 +1,11 @@
-import styles from './BaseTemplate.module.css';
-
 export interface IBaseTemplate {}
 
-const BaseTemplate: React.FC<IBaseTemplate> = () => {
-  return <div className={styles.container}>Hello world!</div>;
+const BaseTemplate: React.FC<IBaseTemplate> = ({ sampleTextProp }: any) => {
+  return (
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500">
+      {sampleTextProp}
+    </div>
+  );
 };
 
 export default BaseTemplate;
