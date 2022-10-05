@@ -13,6 +13,11 @@ const Search: React.FC<ISearch> = () => {
       onSubmit={(e) => {
         e.preventDefault();
         router.push(`/results?search=${searchTerm}`);
+        {
+          /*
+        Change the route to search for the term
+      */
+        }
       }}
     >
       <input

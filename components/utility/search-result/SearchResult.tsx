@@ -1,11 +1,6 @@
 import Link from 'next/link';
 import { ISearchData } from '../../../lib/search/types';
 
-{
-  /* 
-  The line below had the search data type consolidated.
-*/
-}
 export type ISearchResult = ISearchData & React.ComponentPropsWithoutRef<'div'>;
 
 const SearchResult: React.FC<ISearchResult> = ({
